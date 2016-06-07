@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ir.sanjaghakgroup.numbercorrector.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/remove_hyphne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove hypen &apos;-&apos;" />
+
+        <CheckBox
+            android:id="@+id/remove_parenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove parenthesis &apos;(&apos; OR &apos;)&apos;" />
+
+        <CheckBox
+            android:id="@+id/remove_slashes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove slahes &apos;/&apos;" />
+
+        <CheckBox
+            android:id="@+id/remove_underscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove underscores &apos;_&apos;" />
+
+        <CheckBox
+            android:id="@+id/remove_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove dots &apos;.&apos;" />
+
+        <CheckBox
+            android:id="@+id/remove_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove spaces &apos; &apos;" />
+
+        <CheckBox
+            android:id="@+id/add_prefix_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add prefix country code (ex :  0910... changes to 0098910...)" />
+
+        <EditText
+            android:id="@+id/country_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0098"
+            android:enabled="false"
+            android:hint="Your country code (0098 for iran)" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/change_first_of_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change first of number" />
+
+        <RadioGroup
+            android:id="@+id/radioPlus00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/change_plus_with_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Change first + with 00" />
+
+            <RadioButton
+                android:id="@+id/change_00_with_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Change first 00 with +" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/dot_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/do_it_" />
+    </LinearLayout>
+
+</RelativeLayout>
