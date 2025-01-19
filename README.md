@@ -19,7 +19,7 @@ I initially developed this program for personal use to address the formatting is
 ### Get Started
 The program's code is available on GitHub for development and collaboration:
 
-- **GitHub Repository**: [PhoneCorrector](https://github.com/movaffagh/PhoneCorrector)
+- **GitHub Repository**: [PhoneCorrector](https://github.com/mr-mimad/PhoneCorrector)
 - **Download from Cafe Bazaar**: [Number Corrector](https://cafebazaar.ir/app/ir.sanjaghakgroup.numbercorrector)
 
 Feel free to contribute or use the app to simplify managing your phonebook contacts!
